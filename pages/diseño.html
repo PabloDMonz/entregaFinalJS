@@ -5,49 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/248852b4a9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img class="Logo" src="../assets/img/Logo.jpg " alt="Logo">
-        </a>
-        <nav>
-            <ul class="listaNav">
-                <!--target="blank"  para enlaces externos-->
-                <li><a class="linkNav" href="../index.html">Inicio</a></li>
-                <li><a class="linkNav" href="nosotros.html">Nosotros</a></li>
-                <li><a class="linkNav" href="galeria.html">Galeria</a></li>
-                <li><a class="linkNav" href="diseño.html">Diseño</a></li>
-                <li><a class="linkNav" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
-
-    </header>
+    <header class="bgNegro">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">     
+                <a class="navbar-brand" href="../index.html">
+                  <img class="logo" src="../assets/img/Logo2.png" alt="">
+                </a>        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./diseño.html">Diseño</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>                                 
+                </ul>                
+              </div> 
+            </div>
+          </nav> 
+    </header> 
     <main>
+        <section>
+            <h1>DISEÑO</h1>
+            <p>Queremos que nuestros clientes se sientan parte del proceso de fabricación, es por eso que mantenemos constante comunicación para mejorar nuestros productos y ajustarlos al máximo en cuanto a requerimientos y gustos del comprador.</p>
+            <img src="../assets/img/croquislamp.jpg" alt="">
+            <div>
+                <p>Constantemente vamos dando muestras de nuestro progreso para corregir cualquier disconformidad
+                </p>
+                <div class="row">
+                    <img class="col-3" src="../assets/img/fogon1.jpg" alt="">
+                    <img class="col-3" src="../assets/img/fogon.jpg" alt="">
+                    <img class="col-3" src="../assets/img/fogon3.jpg" alt="">
+                </div>
+            
+            </div>
+            
+            
+        </section>
 
     </main>
-    <footer>
-        <nav>
-            <ul class="listaNav">
-                <li><a class="linkNavF" href="../index.html">Inicio</a></li>
-                <li><a class="linkNavF" href="nosotros.html">Nosotros</a></li>
-                <li><a class="linkNavF" href="galeria.html">Galeria</a></li>
-                <li><a class="linkNavF" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <p class="parrafofooter">
+    <footer class="bgNegro justify-content-evenly">
+        <p class="parrafofooter mx-5">
             San Martin y España <br>
             Río Tercero, Córdoba, Argentina. <br>
             Tel: +54 3571 666666 <br>                        
         </p>
-        <nav class="enlacesFooter">
-            <img class="iconoRs" src="../assets/img/whatsapplogo.png" alt="">
-            <img class="iconoRs" src="../assets/img/iglogo.png" alt="">
-            <img class="iconoRs" src="../assets/img/facelogo.png" alt="">            
-        </nav>
+        <div class="mx-5">
+            <a class="anclaFooter icon" target="_blank"> <i class="fa-brands fa-whatsapp icon" style="color: #f7f7f7;"></i></a>
+            <a class="anclaFooter icon" target="_blank"><i class="fa-brands fa-facebook icon" style="color: #f7f7f7;"></i></a>
+            <a class="anclaFooter icon" target="_blank"><i class="fa-brands fa-instagram icon" style="color: #f7f7f7;"></i></a>            
+        </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

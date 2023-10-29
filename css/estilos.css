@@ -1,94 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main{
-    background-color: rgb(204, 200, 170);
-    color: rgb(34, 32, 32);
-    font-size: 1rem;
-    border-bottom: 4px solid rgb(125, 124, 124);
-}
-header{
-    background-color: rgb(241, 239, 239);
-    font-family: "raleway", sans-serif;
-    font-size: 1rem;
-    border-bottom: 4px solid rgb(125, 124, 124);
-}
-.Logo{
-    height: 4%;
-    width: 4%;
-    margin: 20px;
-}
-footer{
-    background-color: rgb(25, 23, 23);
-    color: antiquewhite;
-    font-family: "raleway", sans-serif;
-    font-size: 1rem;
-        
-}
-p{
-    color: rgb(34, 32, 32);
-    font-family: "raleway", sans-serif;
-    background-color: rgb(44, 131, 131);
-    margin-left: 5%;
-    width: 50%;
-}
-h1{
-    font-family: "raleway", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    display: flex;
-    width: fit-content;
-    
-}
-h2{
-    font-family: "raleway", sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: chocolate;
-}
 
-.tamañotitulo{
-    font-size: 3rem;
-    font-weight: 700;
-    background-color: rgb(204, 200, 170);
-    background-color: blue;
-    justify-content: center;
-}
-
-.imagenIndex{
-    height: 20%;
-    width: 20%;
-
-}
-
-.listaNav li{
-    list-style: none;
-    display: inline;
-}
-
-.linkNav{
-    text-decoration: none;
-    color: rgb(25, 23, 23);
- }
- .linkNavF {
-    text-decoration: none;
-    color:rgb(204, 200, 170);
- }
- 
- .parrafofooter{
-    color:rgb(204, 200, 170);
- }
-
-.enlacesFooter {
-    display: inline;
-    
+body{
+    font-family: 'Manrope', sans-serif;
+    color: rgb(194, 194, 194);
+    background-color: rgb(26,29,39);
 } 
 
+footer{
+    display: flex;
+    
+}
+.anclaFooter{
+    
+}
+.icon{
+    font-size: 3rem;   
+    
+}
+.logo{
+    width: 80px;
+}
+
+.bgNegro{
+    background-color: black;
+ }
+
+.bgCard{
+    background-color: rgb(59, 59, 59);
+    
+}
+.btnColor{
+    background-color: rgb(173, 172, 172);
+    border-color: rgb(81, 81, 82);
+}
+
+.imgGal{
+    width: 50%;
+}
 .iconoRs{
-    height: 20px;
-    width: 20px;
+    width: 80px;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 600px){
+    .icon{
+        font-size: 2rem;
+    }
+    .mainDisplay{
+        display: flex;
+        flex-direction: column;
+    .formAncho{
+        width: 100%;
+    }
+    }
 }
