@@ -13,10 +13,23 @@ body{
 } 
 
 footer{
-    display: flex;
-    
+    display: flex;    
 }
-.anclaFooter{
+main{
+    background-image: linear-gradient(to bottom, #000000, #0b0708, #120d11, #161218, #19171e, #19171e, #19171e, #19171e, #161218, #120d11, #0b0708, #000000);
+}
+.boton{
+    background-color: rgb(54, 54, 54);
+    border: 4px solid rgb(94, 94, 94);
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(66, 66, 66);
+    text-shadow: 0px 5px 5px  rgb(0, 0, 0);
+}
+.sombra{
+    box-shadow: 0 0 20px 3px rgb(66, 66, 66);
     
 }
 .icon{
@@ -30,8 +43,8 @@ footer{
 .bgNegro{
     background-color: black;
  }
-
-.bgCard{
+ 
+ .bgCard{
     background-color: rgb(59, 59, 59);
     
 }
@@ -47,6 +60,59 @@ footer{
     width: 80px;
     color: aliceblue;
 }
+.logo {
+    height: 125px;
+    width: auto;
+}
+
+.icon{
+    color: #f7f7f7;
+    margin: 5px;
+    filter: drop-shadow(0 0 20px rgb(66, 66, 66));
+    
+    
+}
+
+.whatsapp:hover{
+    color: rgb(47, 186, 67);
+    transition: color 0.5s, transform 1s;
+    transform: scale(1.2);
+    
+
+}
+.facebook:hover{
+    color: rgb(24, 115, 235);
+    transition: color 0.5s, transform 1s;
+    transform: scale(1.2);
+}
+
+.instagram:hover{
+    background: -webkit-linear-gradient(#fdf497, #fd5949, #d6249f, #285AEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.5s, transform 1s;
+    transform: scale(1.2);
+}
+.fila {
+    height: 90vh; 
+}
+.fotoBanner{
+    object-fit: cover;
+    width: 100%;
+    
+    
+}
+.fotoIndex {
+    object-fit: contain; /* Limita la altura de la imagen al 100% de la altura de la columna */
+    width: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.fotoGal{
+    width: 100%;
+    height: 450px;
+    padding: 25px;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 600px){
     .icon{
@@ -55,8 +121,43 @@ footer{
     .mainDisplay{
         display: flex;
         flex-direction: column;
-    .formAncho{
+    
+        .formAncho{
         width: 100%;
+        }
     }
+    footer{
+        flex-direction: column;
     }
+    .parrafoFooter{
+        text-align: center;
+    }
+    .filaFooter{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1200px){
+    .redes{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+    }
+    .parrafoFooter{
+        text-align: center;
+    }
+    .boton{
+        margin-bottom: 10px;
+        
+    }
+    
+
 }

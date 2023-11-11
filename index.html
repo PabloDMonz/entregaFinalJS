@@ -17,14 +17,14 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">     
               <a class="navbar-brand" href="./index.html">
-                <img class="logo" src="./assets/img/Logo2.png" alt="">
+                <img class="logo sombra" src="./assets/img/Logo2.png" alt="">
               </a>
                      
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+              <div class="collapse navbar-collapse pt-3" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto text-end pe-5">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                   </li>
@@ -49,66 +49,94 @@
 
 
     <main>
-        <section>
-            <h1 class = ""> METALHÄUS</h1>
+        <section class="d-flex flex-column">
+            <div class="fila p-5"><img class="img-fluid  h-100 rounded fotoBanner" src="./assets/img/resto.jpg" alt=""></div>
+            
+            <h1 class ="text-center"> METALHÄUS</h1>
             <div class="row mx-1 justify-content-evenly">
                 <p class="col-xl-4 col-md-6 col-sm-12">Somos una empresa familiar dedicada a la herrería de diseño. Fabricamos lo que desees, utilizando nuestros conocimientos en trabajo con el metal combinando la robustez, rusticidad y elegancia del acero y la madera para darle el mejor estilo industrial a tu casa.
                 </p>
-                <img class="col-xl-4 col-md-6 col-sm-12" src="./assets/img/soldador2.jpg" alt="">
+                <img class="col-xl-4 col-md-6 col-sm-12 " src="./assets/img/soldador2.jpg" alt="">
             </div>
             
         </section>
          
-        
-        
-        <p>Diseñamos a gusto de nuestros clientes, relevando sus necesidades y constantemente manteniendonos a la vanguardia de las nuevas tendencias de decoración</p>
-        </p>
-
-        <section class="container-fluid">
-            <h2>Nuestros clientes opinan</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-5">
-                <div class="col h-100">
-                  <div class="card">
-                    <img src="./assets/img/Hetfield1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">James Hetfield Jr</h5>
-                      <p class="card-text">"Les pedí unas lámparas y terminé renovando todo mi dormitorio"</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col h-100">
-                  <div class="card">
-                    <img src="./assets/img/Hetfield2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">James Hetfield</h5>
-                      <p class="card-text">"Muy prolijos y detallistas. Excelente atención y amabilidad"</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col h-100">
-                  <div class="card">
-                    <img src="./assets/img/Hetfield3.jpg" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">James Hetfield Sr</h5>
-                      <p class="card-text">"Hicieron todos los muebles de mi casa. Se los recomendé a todos mis conocidos"</p>
-                    </div>
-                  </div>
-                </div>
-                
+        <div class="container">
+          <div class="row fila align-items-center">
+              <!-- Columna para el párrafo -->
+              <div class="col-md-6">
+                  <p>Diseñamos a gusto de nuestros clientes, relevando sus necesidades y constantemente manteniendonos a la vanguardia de las nuevas tendencias de decoración</p>
               </div>
+      
+              <!-- Columna para la imagen -->
+              <div class="col-md-6 h-100">
+                  <!-- La clase 'img-fluid' de Bootstrap hará que la imagen se ajuste al tamaño de la columna -->
+                  <img src="./assets/img/soldador2.jpg" alt="Tu imagen" class="img-fluid h-100 fotoIndex">
+              </div>
+          </div>
+      </div>
+        
+        
+      <div class="">
+        <section class="container-fluid">
+          <h2>Nuestros clientes opinan</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-5">
+              <div class="col h-100">
+                <div class="card">
+                  <img src="./assets/img/Hetfield1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">James Hetfield Jr</h5>
+                    <p class="card-text">"Les pedí unas lámparas y terminé renovando todo mi dormitorio"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col h-100">
+                <div class="card">
+                  <img src="./assets/img/Hetfield2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">James Hetfield</h5>
+                    <p class="card-text">"Muy prolijos y detallistas. Excelente atención y amabilidad"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col h-100">
+                <div class="card">
+                  <img src="./assets/img/Hetfield3.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">James Hetfield Sr</h5>
+                    <p class="card-text">"Hicieron todos los muebles de mi casa. Se los recomendé a todos mis conocidos"</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+        </section>
 
+      </div>
+        
+        
     </main>
-    <footer class="bgNegro justify-content-evenly">
-        <p class="parrafofooter mx-5">
-            San Martin y España <br>
-            Río Tercero, Córdoba, Argentina. <br>
-            Tel: +54 3571 666666 <br>                        
-        </p>
-        <div class="mx-5">
-            <a class="anclaFooter icon" target="_blank"> <i class="fa-brands fa-whatsapp icon" style="color: #f7f7f7;"></i></a>
-            <a class="anclaFooter icon" target="_blank"><i class="fa-brands fa-facebook icon" style="color: #f7f7f7;"></i></a>
-            <a class="anclaFooter icon" target="_blank"><i class="fa-brands fa-instagram icon" style="color: #f7f7f7;"></i></a>            
+    
+    <footer class="container-fluid bgNegro pt-3">
+      <div class="col mt-3"> 
+        <div class="row filaFooter">
+          <div class="col-lg-9 col-md-7 col-sm-12 container-fluid">
+            <p class="parrafoFooter mx-5">
+              San Martin y España <br>
+              Río Tercero, Córdoba, Argentina. <br>
+              Tel: +54 3571 666666 <br>                        
+            </p>
+          </div>
+          <div class="container-fluid col-lg-3 col-md-5 col-sm-12 mr-5 redes">
+                <a class="icon whatsapp" href="https://web.whatsapp.com/" target="_blank"> <i class="fa-brands fa-whatsapp whatsapp px-2"></i></a>
+                <a class="icon" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook facebook px-2"></i></a>
+                <a class="icon" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram instagram px-2"></i></a>            
+          </div>
         </div>
+        <div class="col text-center my-3"> <i class="fa-solid fa-copyright" style="color: #ffffff;"></i> 2023 - Todos los derechos reservados </div>
+      </div>
+      
+      
 
     </footer>
         
