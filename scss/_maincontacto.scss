@@ -1,0 +1,15 @@
+.btnColor{
+    color: map-get($colores , blanco );
+}
+
+@media screen and (max-width: 600px){
+    
+    .mainDisplay{
+        display: $dflex;
+        flex-direction: $flex-column;
+    
+        .formAncho{
+        width: $cienporciento;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.tarjeta{
+    background-color: map-get($colores , color-gris-oscuro );
+    border: 4px solid map-get($colores , color-gris-claro);
+    border-radius: $cinco-px;
+    box-shadow: $cero $cero $veinte-px map-get($colores , color-gris-medio );
+}
+.fotoBanner{
+    object-fit: $cover;
+    width: $cienporciento;
+}
+.fila {
+    height: 90vh; 
+}
+
+@media screen and (max-width: 600px){
+    section .fila{
+        height: fit-content;
+        height: -moz-fit-content;
+    }
+    .fotoBanner{
+        object-fit: scale-down;
+    }
+}

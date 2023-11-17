@@ -1,0 +1,6 @@
+.logo{
+        box-shadow: $cero $cero $veinte-px 3px map-get($colores , color-gris-medio );
+        height: 125px;
+        width: $auto;
+    }
+

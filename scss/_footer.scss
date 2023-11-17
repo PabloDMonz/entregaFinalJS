@@ -1,0 +1,70 @@
+footer{
+    display: $dflex;
+    .icon{
+        font-size: 3rem;   
+        color: #f7f7f7;
+        margin: $cinco-px;
+        filter: drop-shadow($cero $cero $veinte-px map-get($colores , color-gris-medio ));   
+        .whatsapp:hover{
+            color: rgb(47, 186, 67);
+            transition: color 0.5s, transform 1s;
+            transform: scale(1.2);
+            
+        
+        }
+        .facebook:hover{
+            @extend .whatsapp;
+            color: rgb(24, 115, 235);
+            
+        }
+        
+        .instagram:hover{
+            @extend .whatsapp;
+            background: -webkit-linear-gradient(#fdf497, #fd5949, #d6249f, #285AEB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    footer{
+        flex-direction: $flex-column;
+        .filaFooter{
+            display: $dflex;
+            flex-direction: $flex-column;        
+            align-items: $center;
+            .parrafoFooter{
+                text-align: $center;
+            }
+            .redes{
+                display: $dflex;
+                justify-content: $center;
+                margin: $auto;
+                padding: $cero;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 1200px){
+    footer {
+        .parrafoFooter{
+            text-align: $center;
+        }
+        .redes{
+            display: $dflex;
+            justify-content: $center;
+            margin: $auto;
+            padding: $cero;
+            .icon{
+                font-size: 2rem;
+            }
+        }
+        
+    }    
+}

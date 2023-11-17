@@ -1,0 +1,15 @@
+*{
+    margin: $cero;
+    padding: $cero;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    color: map-get($colores , color-gris-muy-claro );
+    background-color: map-get($colores , gris-body );
+} 
+
+main{
+    background-image: linear-gradient(to bottom, #000000, #0b0708, #120d11, #161218, #19171e, #19171e, #19171e, #19171e, #161218, #120d11, #0b0708, #000000);
+}

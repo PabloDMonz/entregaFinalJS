@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap");
 * {
   margin: 0;
@@ -12,14 +11,6 @@ body {
   background-color: rgb(26, 29, 39);
 }
 
-/*- header -*/
-.logo {
-  box-shadow: 0 0 20px 3px rgb(66, 66, 66);
-  height: 125px;
-  width: auto;
-}
-
-/*- main -*/
 main {
   background-image: linear-gradient(to bottom, #000000, #0b0708, #120d11, #161218, #19171e, #19171e, #19171e, #19171e, #161218, #120d11, #0b0708, #000000);
 }
@@ -31,10 +22,6 @@ main {
   box-shadow: 0 0 20px rgb(66, 66, 66);
 }
 
-.bgNegro {
-  background-color: black;
-}
-
 .fotoBanner {
   object-fit: cover;
   width: 100%;
@@ -44,65 +31,31 @@ main {
   height: 90vh;
 }
 
-/*- footer -*/
-footer {
-  display: flex;
+@media screen and (max-width: 600px) {
+  section .fila {
+    height: fit-content;
+    height: -moz-fit-content;
+  }
+  .fotoBanner {
+    object-fit: scale-down;
+  }
 }
-
-.icon {
-  font-size: 3rem;
-  color: #f7f7f7;
-  margin: 5px;
-  filter: drop-shadow(0 0 20px rgb(66, 66, 66));
-}
-
-
-/*- páginas -*/
 .fotoGal {
   width: 100%;
   height: 450px;
   padding: 25px;
   object-fit: cover;
   transition: transform 1s ease-in-out;
-  
+}
+.fotoGal:hover {
+  transform: scale(1.1);
 }
 
 .btnColor {
   color: white;
 }
 
-/*-hovers-*/
-
-.whatsapp:hover {
-  color: rgb(47, 186, 67);
-  transition: color 0.5s, transform 1s;
-  transform: scale(1.2);
-}
-
-.facebook:hover {
-  color: rgb(24, 115, 235);
-  transition: color 0.5s, transform 1s;
-  transform: scale(1.2);
-}
-
-.instagram:hover {
-  background: -webkit-linear-gradient(#fdf497, #fd5949, #d6249f, #285AEB);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: color 0.5s, transform 1s;
-  transform: scale(1.2);
-}
-
-.fotoGal:hover{
-  transform: scale(1.1);
-  
-}
-
-/*- media querys -*/
 @media screen and (max-width: 600px) {
-  .icon {
-    font-size: 2rem;
-  }
   .mainDisplay {
     display: flex;
     flex-direction: column;
@@ -110,45 +63,71 @@ footer {
   .mainDisplay .formAncho {
     width: 100%;
   }
-  section .fila {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
+}
+.logo {
+  box-shadow: 0 0 20px 3px rgb(66, 66, 66);
+  height: 125px;
+  width: auto;
+}
+
+footer {
+  display: flex;
+}
+footer .icon {
+  font-size: 3rem;
+  color: #f7f7f7;
+  margin: 5px;
+  filter: drop-shadow(0 0 20px rgb(66, 66, 66));
+}
+footer .icon .whatsapp:hover, footer .icon .instagram:hover, footer .icon .facebook:hover {
+  color: rgb(47, 186, 67);
+  transition: color 0.5s, transform 1s;
+  transform: scale(1.2);
+}
+footer .icon .facebook:hover {
+  color: rgb(24, 115, 235);
+}
+footer .icon .instagram:hover {
+  background: -webkit-linear-gradient(#fdf497, #fd5949, #d6249f, #285AEB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
   footer {
     flex-direction: column;
   }
-  .parrafoFooter {
-    text-align: center;
-  }
-  .filaFooter {
+  footer .filaFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .redes {
+  footer .filaFooter .parrafoFooter {
+    text-align: center;
+  }
+  footer .filaFooter .redes {
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 0;
-  }
-  .fotoBanner {
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
   }
 }
 @media screen and (max-width: 1200px) {
-  .redes {
+  footer .parrafoFooter {
+    text-align: center;
+  }
+  footer .redes {
     display: flex;
     justify-content: center;
     margin: auto;
     padding: 0;
   }
-  .parrafoFooter {
-    text-align: center;
+  footer .redes .icon {
+    font-size: 2rem;
   }
-  .boton {
-    margin-bottom: 10px;
-  }
+}
+.bgNegro {
+  background-color: black;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -11,5 +11,8 @@
     "url": "(github.com/PabloDMonz/Proyecto_Metalhaus)"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
