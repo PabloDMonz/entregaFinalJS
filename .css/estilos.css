@@ -48,25 +48,10 @@ main {
   padding: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50px;
   transition: transform 1s ease-in-out;
 }
 .fotoGal:hover {
   transform: scale(1.1);
-}
-
-.galeria {
-  box-sizing: border-box;
-  padding: 40px;
-}
-
-.contenedorGal {
-  box-sizing: border-box;
-  border: solid;
-  border-color: rgb(94, 94, 94);
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
 }
 
 .btnColor {
@@ -145,33 +130,15 @@ footer .icon .instagram:hover {
   }
 }
 .fotoLampara {
-  width: 220px;
-  height: 220px;
-  border-radius: 50px;
+  width: 50%;
+  height: 200px;
+  padding: 25px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 1s ease-in-out;
 }
 .fotoLampara:hover {
   transform: scale(1.1);
-}
-
-.contenedor {
-  border: solid;
-  border-color: rgb(94, 94, 94);
-  border-radius: 20px;
-  max-width: 300px;
-  margin: 30px auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor h4,
-.contenedor button,
-.contenedor img {
-  display: flex;
-  margin: 10px auto;
-  justify-content: center;
 }
 
 .bgNegro {

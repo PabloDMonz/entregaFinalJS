@@ -1,0 +1,34 @@
+
+.fotoLampara{
+    width: 220px;
+    height: 220px;
+    border-radius: 50px;
+    object-fit: $cover;
+    transition: transform 1s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+  }
+
+.contenedor{
+    border:solid;
+    border-color: map-get($colores , color-gris-claro);
+    border-radius: 20px;
+    max-width: 300px;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.contenedor h4,
+.contenedor button,
+.contenedor img {
+    display: flex;
+    margin: 10px auto; 
+    justify-content: center;
+    
+}
+

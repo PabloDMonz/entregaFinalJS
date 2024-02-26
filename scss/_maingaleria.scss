@@ -3,8 +3,26 @@
     height: 450px;
     padding: 25px;
     object-fit: $cover;
+    border-radius: 50px;
     transition: transform 1s ease-in-out;
     &:hover{
       transform: scale(1.1);
     }
+}
+
+.galeria{
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.contenedorGal{
+  box-sizing: border-box;
+  border:solid;
+  border-color: map-get($colores , color-gris-claro);
+  border-radius: 20px;
+  
+  
+  align-items: center;
+  justify-content: center;
+  
 }
