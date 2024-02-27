@@ -1,0 +1,61 @@
+.lampara-item {
+    border: solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 2%;
+}
+
+.lampara-item p {
+    margin: 0;
+}
+
+.miniatura-lampara {
+    max-width: 100px; 
+    max-height: 100px; 
+    margin-right: 10px; 
+    border-radius: 5px;
+}
+
+.eliminar-button {
+    background-color: transparent; 
+    border: none;
+}
+
+.eliminar-button:hover {
+    background-color: transparent; 
+}
+
+.totalCompra{
+    padding-right: 50px;
+    text-align: right;
+}
+
+.botonVaciar{
+    margin-left: 50px;
+    background-color: map-get($colores , color-gris-oscuro );
+    color: white;   
+}
+
+.botonVaciar:hover{
+    background-color: map-get($colores , color-gris-oscuro );
+    color: map-get($colores , color-gris-muy-claro ); 
+}
+
+.inputCantidad{
+    height: fit-content;
+    width: 50px;
+}
+
+.botonConfirmar{
+    margin-left: 50px;
+    background-color: rgb(26, 187, 26);
+    color: white;   
+    
+}
+
+.mensajeVacio{
+    text-align: center
+}

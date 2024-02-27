@@ -9,10 +9,13 @@ body {
   font-family: "Red Hat Display", sans-serif;
   color: rgb(194, 194, 194);
   background-color: rgb(26, 29, 39);
+  min-height: 100vh;
+  margin: 0;
 }
 
 main {
   background-image: linear-gradient(to bottom, #000000, #0b0708, #120d11, #161218, #19171e, #19171e, #19171e, #19171e, #161218, #120d11, #0b0708, #000000);
+  min-height: calc(100vh - 100px);
 }
 
 .tarjeta {
@@ -65,8 +68,23 @@ main {
   border: solid;
   border-color: rgb(94, 94, 94);
   border-radius: 20px;
+  text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.botonGaleria {
+  color: white;
+  background-color: rgb(54, 54, 54);
+}
+
+.botonGaleria:hover {
+  color: rgb(194, 194, 194);
+}
+
+.divBotones {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .btnColor {
@@ -176,4 +194,70 @@ footer .icon .instagram:hover {
 
 .bgNegro {
   background-color: black;
+}
+
+.fa-shopping-cart {
+  color: rgb(194, 194, 194);
+}
+
+.lampara-item {
+  border: solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+  padding: 2%;
+}
+
+.lampara-item p {
+  margin: 0;
+}
+
+.miniatura-lampara {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.eliminar-button {
+  background-color: transparent;
+  border: none;
+}
+
+.eliminar-button:hover {
+  background-color: transparent;
+}
+
+.totalCompra {
+  padding-right: 50px;
+  text-align: right;
+}
+
+.botonVaciar {
+  margin-left: 50px;
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.botonVaciar:hover {
+  background-color: rgb(54, 54, 54);
+  color: rgb(194, 194, 194);
+}
+
+.inputCantidad {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50px;
+}
+
+.botonConfirmar {
+  margin-left: 50px;
+  background-color: rgb(26, 187, 26);
+  color: white;
+}
+
+.mensajeVacio {
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */

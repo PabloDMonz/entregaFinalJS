@@ -8,8 +8,12 @@ body{
     font-family: 'Red Hat Display', sans-serif;
     color: map-get($colores , color-gris-muy-claro );
     background-color: map-get($colores , gris-body );
+    min-height: 100vh;
+    margin: 0;
 } 
 
 main{
     background-image: linear-gradient(to bottom, #000000, #0b0708, #120d11, #161218, #19171e, #19171e, #19171e, #19171e, #161218, #120d11, #0b0708, #000000);
+    min-height: calc(100vh - 100px);
+    
 }

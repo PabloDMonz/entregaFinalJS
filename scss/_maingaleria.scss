@@ -20,9 +20,24 @@
   border:solid;
   border-color: map-get($colores , color-gris-claro);
   border-radius: 20px;
+  text-align: center;
   
   
   align-items: center;
   justify-content: center;
   
+}
+
+.botonGaleria{
+  color: white;
+  background-color: map-get($colores, color-gris-oscuro );
+}
+
+.botonGaleria:hover{
+  color: map-get($colores , color-gris-muy-claro );
+}
+
+.divBotones{
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -14,6 +14,38 @@ const lamparas = [
     {id:12, nombre: "Praga", precio: 26000, diametro:33, altura:18},
 ]
 
+/*
+// Definición de la clase Producto
+class Producto {
+    constructor(id, nombre, precio, altura, diametro) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;        
+        this.diametro = diametro;
+        this.altura = altura;
+        
+    }
+}
+
+const lamparas = []
+
+fetch('/lista.json')
+    .then( (res) => res.json())
+    .then( (data) => {
+
+        data.forEach((producto) => {
+            const nuevoProducto = new Producto(producto.id, producto.nombre, producto.precio, producto.diametro, producto.altura);
+            lamparas.push(nuevoProducto);
+        });
+
+        console.log(lamparas);
+    })
+    .catch((error) => {
+        console.log('Error al cargar los datos:', error);
+    });
+
+    console.log(lamparas)*/
+
 
 
 //Carrito de compras
@@ -24,16 +56,13 @@ const guardarCarritoLS = () => {
   localStorage.setItem('carritoCompras', JSON.stringify(carritoCompras));
 };
 
-// Función para cargar el carrito desde localStorage
+// Cargar el carrito desde LS
 const cargarCarritoLS = () => {
   const carritoGuardado = localStorage.getItem('carritoCompras');
   if (carritoGuardado) {
       carritoCompras = JSON.parse(carritoGuardado);
   }
 };
-
-
-
 
 //Transformar lista de productos en grilla interactiva
 const grillaLamparas = document.getElementById("divLamparas");
@@ -48,7 +77,7 @@ lamparas.forEach(lampara => {
   imagen.alt = lampara.nombre;
   imagen.classList.add('fotoLampara');
   imagen.addEventListener('click', ()=>{
-      //Información de la lámpara
+      //Libreria - Información de la lámpara
       Swal.fire({
           title: lampara.nombre,
           text: `Diametro: ${lampara.diametro}cm Altura: ${lampara.altura}cm`,
@@ -87,6 +116,7 @@ lamparas.forEach(lampara => {
         }
     } else {        
         lampara.cantidad = 1;
+        lampara.imagenUrl = imagen.src;
         carritoCompras.push(lampara);
     }
       const Toast = Swal.mixin({                
@@ -117,6 +147,12 @@ lamparas.forEach(lampara => {
 
 cargarCarritoLS();
 
-
-
-    
+//Revisar si el carrito está vacío
+document.addEventListener("DOMContentLoaded", () => {
+  const carritoGuardado = localStorage.getItem('carritoCompras');
+  if (carritoGuardado) {
+      listaCarro = JSON.parse(carritoGuardado);
+  } else {
+      listaCarro = []; 
+  }
+});

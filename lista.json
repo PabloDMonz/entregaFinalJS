@@ -1,0 +1,14 @@
+[
+    {"id":1, "nombre": "London", "precio": 60000, "diametro":50, "altura":45},
+    {"id":2, "nombre": "Hawaii", "precio": 30000, "diametro":50, "altura":20},
+    {"id":3, "nombre": "Nairobi", "precio": 30000, "diametro":35, "altura":50},
+    {"id":4, "nombre": "Shangai", "precio": 40000, "diametro":60, "altura":25},
+    {"id":5, "nombre": "Vienna", "precio": 50000, "diametro":70, "altura":40},
+    {"id":6, "nombre": "Munich", "precio": 60000, "diametro":80, "altura":35},
+    {"id":7, "nombre": "Miami", "precio": 35000, "diametro":50, "altura":25},
+    {"id":8, "nombre": "Cordoba", "precio": 35000, "diametro":40, "altura":45},
+    {"id":9, "nombre": "Habana", "precio": 35000, "diametro":30, "altura":75},
+    {"id":10, "nombre": "Siberia", "precio": 30000, "diametro":30, "altura":25},
+    {"id":11, "nombre": "Paris", "precio": 33000, "diametro":25, "altura":40},
+    {"id":12, "nombre": "Praga", "precio": 26000, "diametro":33, "altura":18}
+]
