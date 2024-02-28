@@ -58,6 +58,7 @@ if (listaCarro.length > 0) {
         carroCompraDiv.appendChild(mensajeVacio)
         });
 }
+
 botonCompra.appendChild(botonVaciar);
 
 
@@ -148,7 +149,7 @@ const calcularTotal = (carrito) => {
 
 const actualizarTotal = () => {
     const total = calcularTotal(listaCarro);
-    totalCompra.textContent = `Total: ${total}`;
+    totalCompra.textContent = `Total: $${total}`;
 };
 
 const totalCompra = document.createElement("p");
