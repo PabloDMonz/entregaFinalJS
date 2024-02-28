@@ -1,13 +1,12 @@
 const archivo = '/lista.json';
 let lamparas = []; 
 
-// Obtener JSON
+// Obtener el archivo JSON
 fetch(archivo)
   .then(response => response.json())
   .then(data => {
     lamparas = data; 
-    console.log(lamparas); 
-
+    
     //Transformar lista de productos en grilla interactiva
     const grillaLamparas = document.getElementById("divLamparas");
 
