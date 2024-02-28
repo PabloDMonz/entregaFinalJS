@@ -1,4 +1,4 @@
-const archivo = '/lista.json';
+const archivo = 'https://raw.githubusercontent.com/PabloDMonz/entregaFinalJS/versionFinal/lista.json';
 let lamparas = []; 
 
 // Obtener el archivo JSON
